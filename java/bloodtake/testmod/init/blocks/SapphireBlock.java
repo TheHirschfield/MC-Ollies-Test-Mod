@@ -10,6 +10,9 @@ public class SapphireBlock  extends Block{
 	public SapphireBlock() {
 		super(Material.IRON);
 		setRegistryName("sapphire_block");
+		setResistance(3F);
+		setHardness(3F);
+		setHarvestLevel("pickaxe", 2);
 		GameRegistry.register(this);
 		GameRegistry.register(new ItemBlock(this), getRegistryName());
 	
